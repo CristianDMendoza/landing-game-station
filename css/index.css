@@ -1,0 +1,110 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    background-image: url('../img/game-console-6603120_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Koulen', cursive;
+    color: white;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Barra de navegación */
+.menu {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.5s ease;
+}
+
+.menu:hover {
+    background-color: rgb(60, 97, 23);
+}
+
+/* Título del menú */
+.sub {
+    font-size: 40px;
+    text-shadow: 5px 3px 3px black;
+}
+
+/* Iconos del menú */
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s linear;
+}
+
+.icon:hover {
+    transform: translateY(4px);
+}
+
+/* Sección central */
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+/* Título */
+.contenido h1 {
+    font-size: 50px;
+    text-shadow: 3px 3px 3px black;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+.btn-jugar {
+    width: 200px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-jugar:hover {
+    background-color: darkred;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.final {
+    text-shadow: 3px 3px 3px black;
+}
